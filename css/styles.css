@@ -16,3 +16,13 @@ ul {
   list-style: none;
   list-style-type: none;
 }
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  width: 300px;
+  box-shadow: 10px 5px 5px #212121;
+}
