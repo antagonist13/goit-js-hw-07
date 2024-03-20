@@ -28,3 +28,7 @@ function destroyBox(event) {
 }
 createBtn.addEventListener("click", newBoxCreating)
 destroyBtn.addEventListener("click", destroyBox)
+
+number.classList.add("numberWindow")
+createBtn.classList.add("createButton")
+destroyBtn.classList.add("destroyButton")

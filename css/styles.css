@@ -57,6 +57,9 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  background: #4e75ff;
+  display: flex;
+  align-items: center;
 }
 .item {
   border-radius: 8px;
@@ -73,4 +76,85 @@ ul {
   flex-direction: row;
   gap: 10px;
   align-items: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.widget {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#controls {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.numberWindow {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px;
+  width: 150 px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.createButton {
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  width: 120px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.destroyButton {
+  border-radius: 8px;
+  padding: 8px 16px;
+  height: 40px;
+  width: 120px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #ff4e4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#boxes {
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.box {
+  display: block;
 }

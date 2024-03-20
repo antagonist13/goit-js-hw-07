@@ -14,3 +14,7 @@ const handleClick = event => {
 };
 
 button.addEventListener("click", handleClick)
+button.classList.add("button")
+
+const text = document.querySelector("p")
+text.classList.add("text")

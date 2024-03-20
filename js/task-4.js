@@ -23,8 +23,9 @@ label.nextElementSibling.classList.add("label")
 
 const button = form.lastElementChild
 button.classList.add("button")
+button.style.width = "86px"
 
 const firstInput = label.firstElementChild
-firstInput.classList.add("input")
+firstInput.classList.add("window")
 const secondInput = label.nextElementSibling.lastElementChild
-secondInput.classList.add("input")
+secondInput.classList.add("window")
