@@ -34,10 +34,17 @@ let thirdCategoryElementsCalculation = [...thirdCategoryElements].forEach((el) =
 console.log(`Elements: ${thirdCategoryElementsQuantity}`);
 
 
+const headings = document.querySelectorAll("h2")
+headings.forEach((el) => el.classList.add("header"))
 
+let allLi = []
+const li = (allLi.push([...firstCategoryElements],[...secondCategoryElements], [...thirdCategoryElements]) )
+console.log(allLi);
 
-
-
+for (const li of allLi) {
+  li.forEach((el) => el.classList.add("text"))
+  li.forEach ((el) => el.classList.add("window"))
+}
 
 
 
