@@ -39,7 +39,6 @@ headings.forEach((el) => el.classList.add("header"))
 
 let allLi = []
 const li = (allLi.push([...firstCategoryElements],[...secondCategoryElements], [...thirdCategoryElements]) )
-console.log(allLi);
 
 for (const li of allLi) {
   li.forEach((el) => el.classList.add("text"))
