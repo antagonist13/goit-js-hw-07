@@ -7,6 +7,7 @@ const boxes = document.querySelector("#boxes")
 
 
 function newBoxCreating(event) {
+    boxes.innerHTML = ''
     let previousSize = 10
     if (number.value > 100 || number.value < 1) {
         return
