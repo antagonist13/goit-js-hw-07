@@ -9,8 +9,9 @@ function getRandomHexColor() {
 }
 
 const handleClick = event => {
-    body.style.backgroundColor = getRandomHexColor()
-    span.textContent = getRandomHexColor()
+  const color = getRandomHexColor()
+    body.style.backgroundColor = color
+    span.textContent = color
 };
 
 button.addEventListener("click", handleClick)
