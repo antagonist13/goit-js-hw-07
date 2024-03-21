@@ -1,13 +1,9 @@
 const categories = document.querySelectorAll(".item")
 console.log(`Number of categories: ${categories.length}`);
-console.log(`Category: ${categories[0].firstElementChild.textContent}`);
-console.log(`Elements: ${categories[0].lastElementChild.children.length}`);
-
-console.log(`Category: ${categories[1].firstElementChild.textContent}`);
-console.log(`Elements: ${categories[1].lastElementChild.children.length}`);
-
-console.log(`Category: ${categories[2].firstElementChild.textContent}`);
-console.log(`Elements: ${categories[2].lastElementChild.children.length}`);
+categories.forEach((el) => {
+  console.log(`Category: ${el.firstElementChild.textContent}`);
+  console.log(`Elements: ${el.lastElementChild.children.length}`);
+})
 
 // Number of categories: 3
 // Category: Animals
@@ -20,10 +16,11 @@ console.log(`Elements: ${categories[2].lastElementChild.children.length}`);
 const headings = document.querySelectorAll("h2")
 headings.forEach((el) => el.classList.add("header"))
 
-let allLi = []
-const li = (allLi.push([...categories[0].lastElementChild.children],[...categories[1].lastElementChild.children], [...categories[2].lastElementChild.children]) )
+let allElements = []
+const items = document.querySelectorAll(".item")
+items.forEach((el) => allElements.push(([...el.lastElementChild.children])))
 
-for (const li of allLi) {
-  li.forEach((el) => el.classList.add("text"))
-  li.forEach ((el) => el.classList.add("window"))
+for (const i of allElements) {
+  i.forEach((el) => el.classList.add("text"))
+  i.forEach ((el) => el.classList.add("window"))
 }
